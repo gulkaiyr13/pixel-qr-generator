@@ -26,7 +26,6 @@ C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\bin\Debug\net9.0-windows\PixelQRGener
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\App.g.cs
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp_MarkupCompile.cache
-C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp_MarkupCompile.lref
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\MainWindow.baml
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.g.resources
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.GeneratedMSBuildEditorConfig.editorconfig
@@ -38,3 +37,7 @@ C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\refint\Pixel
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.pdb
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.genruntimeconfig.cache
 C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\ref\PixelQRGeneratorApp.dll
+C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.csproj.AssemblyReference.cache
+C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRGeneratorApp.sourcelink.json
+C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\bin\Debug\net9.0-windows\QRCoder.dll
+C:\C#\PixelQrGeneretor\PixelQRGeneratorApp\obj\Debug\net9.0-windows\PixelQRG.65B719CE.Up2Date

@@ -1,13 +1,8 @@
-﻿using System.Configuration;
-using System.Data;
-using System.Windows;
+﻿using System.Windows;
 
-namespace PixelQRGeneratorApp;
-
-/// <summary>
-/// Interaction logic for App.xaml
-/// </summary>
-public partial class App : Application
+namespace PixelQRGeneratorApp
 {
+    public partial class App : Application
+    {
+    }
 }
-

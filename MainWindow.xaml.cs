@@ -1,23 +1,25 @@
-﻿using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using PixelQRGeneratorApp.Services;
+using PixelQRGeneratorApp.Utils;
 
-namespace PixelQRGeneratorApp;
-
-/// <summary>
-/// Interaction logic for MainWindow.xaml
-/// </summary>
-public partial class MainWindow : Window
+namespace PixelQRGeneratorApp
 {
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        private readonly QRService _qrService = new QRService();
+
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        private void GenerateButton_Click(object sender, RoutedEventArgs e)
+        {
+            string text = InputText.Text;
+            int pixelSize = (int)PixelSlider.Value;
+
+            var bitmap = _qrService.GenerateQRCode(text);
+            PixelHelper.RenderToCanvas(bitmap, MyCanvas, pixelSize);
+        }
     }
-}
+}   
