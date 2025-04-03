@@ -1,0 +1,1 @@
+# pixel-qr-generator
