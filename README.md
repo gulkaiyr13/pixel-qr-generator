@@ -15,10 +15,12 @@ It supports animated rendering, customizable pixel size, shape, and color, and a
 ## Screenshots
 
 ### Main Interface
-![Main UI](![img.png](img.png)screenshots/main-ui.png)
+![Main UI]![image](https://github.com/user-attachments/assets/ce58a39a-ac51-4163-b1c8-b6ee7224acb1)
+
 
 ### QR Code Preview with Custom Settings
-![QR Preview](screenshots/qr-preview.png)
+![QR Preview]![image](https://github.com/user-attachments/assets/bc93051a-879a-48bd-9aac-c1fbb8f09c8a)
+
 
 ## Requirements
 
