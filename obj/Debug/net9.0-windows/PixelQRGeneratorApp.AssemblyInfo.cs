@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PixelQRGeneratorApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+090678daa394c7706b58480eee75cda690e0927b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0a1fb4ba58961af4cc1d9d6250b28f43ae158d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PixelQRGeneratorApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PixelQRGeneratorApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
