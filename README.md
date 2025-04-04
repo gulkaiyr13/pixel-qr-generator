@@ -21,6 +21,9 @@ It supports animated rendering, customizable pixel size, shape, and color, and a
 ### QR Code Preview with Custom Settings
 ![QR Preview]![image](https://github.com/user-attachments/assets/bc93051a-879a-48bd-9aac-c1fbb8f09c8a)
 
+### QR Code Saving
+![image](https://github.com/user-attachments/assets/149d6b53-f669-4d51-a249-4ea174290f1d) ![image](https://github.com/user-attachments/assets/98321ba1-a666-4334-b67b-2b0fd92d1b97)
+
 
 ## Requirements
 
