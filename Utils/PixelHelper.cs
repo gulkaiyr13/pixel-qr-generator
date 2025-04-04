@@ -84,7 +84,7 @@ namespace PixelQRGeneratorApp.Utils
 
             shapeElement = _shape switch
             {
-                "Круг" => new Ellipse(),
+                "Circle" => new Ellipse(),
                 _ => new Rectangle()
             };
 
