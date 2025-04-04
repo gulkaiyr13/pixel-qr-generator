@@ -1,9 +1,10 @@
-﻿using System.Windows;
+﻿using System.IO;
+using System.Windows;
+using System.Windows.Controls;
+using Microsoft.Win32;
 using PixelQRGeneratorApp.Services;
 using PixelQRGeneratorApp.Utils;
 using QRCoder;
-using Microsoft.Win32;
-using System.IO;
 
 namespace PixelQRGeneratorApp
 {
@@ -20,9 +21,11 @@ namespace PixelQRGeneratorApp
         {
             string text = InputText.Text;
             int pixelSize = (int)PixelSlider.Value;
+            string shape = ((ComboBoxItem)PixelShapeSelector.SelectedItem).Content.ToString();
+            string selectedColor = ((ComboBoxItem)ColorSelector.SelectedItem).Content.ToString();
 
             var bitmap = _qrService.GenerateQRCode(text);
-            PixelHelper.RenderToCanvas(bitmap, MyCanvas, pixelSize);
+            PixelHelper.RenderToCanvasAnimated(bitmap, MyCanvas, pixelSize, shape, selectedColor);
         }
 
         private void SaveSvgButton_Click(object sender, RoutedEventArgs e)
@@ -30,14 +33,18 @@ namespace PixelQRGeneratorApp
             string text = InputText.Text;
             if (string.IsNullOrWhiteSpace(text))
             {
-                MessageBox.Show("Write a text for QR.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Please enter text to generate a QR code.", "Warning", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+
+            var selectedColor = ((ComboBoxItem)ColorSelector.SelectedItem).Content.ToString().ToLower();
 
             var qrGenerator = new QRCodeGenerator();
             var qrCodeData = qrGenerator.CreateQrCode(text, QRCodeGenerator.ECCLevel.Q);
             var svgQrCode = new SvgQRCode(qrCodeData);
-            string svgContent = svgQrCode.GetGraphic(10);
+
+            // foregroundColor, backgroundColor, drawQuietZones
+            string svgContent = svgQrCode.GetGraphic(10, selectedColor, "#FFFFFF", true);
 
             var dialog = new SaveFileDialog
             {
@@ -49,7 +56,7 @@ namespace PixelQRGeneratorApp
             if (dialog.ShowDialog() == true)
             {
                 File.WriteAllText(dialog.FileName, svgContent);
-                MessageBox.Show("SVG file saved!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("QR code was successfully saved as an SVG file!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
             }
         }
     }
